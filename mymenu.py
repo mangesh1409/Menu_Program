@@ -22,12 +22,32 @@ loc=int(input("Eneter your choice : "));
 
 def main_menu():
 	print("""
-		1: Date
-		2: calender
+		1: Basic Linux Commands
 		3: AWS
 		4: Hadoop
 		5: Docker
 		6: configure web server
 		7: Exit
 			""")
-
+while True:
+	
+		main_menu()
+		user_input = int(input("Enter your choice."))
+		if user_input==1:
+			linux();
+		"""elif user_input==2:
+			
+		elif user_input==3:
+			aws()
+		elif user_input==4:
+			hadoop()
+		elif user_input==5:
+			docker()
+		elif user_input==6:
+			webserver()"""
+		elif user_input==7:
+			break
+		else:
+			os.system("tput setaf 3")
+			print("\t\t\tinvalid choice")
+			os.system("tput setaf 7")
