@@ -581,6 +581,12 @@ while True:
 		linux();
 	if user_input==2:
 		docker();
+	elif user_input==3:
+		aws()
+	elif user_input==4:
+		hadoop()
+	elif user_input==6:
+		webserver()
 	elif user_input==7:
 		break
 	else:
